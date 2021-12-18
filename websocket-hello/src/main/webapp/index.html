@@ -1,0 +1,66 @@
+<!DOCTYPE HTML>
+<html lang="zh">
+<head>
+    <title>Getting Started: Serving Web Content</title>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
+</head>
+<body>
+    <p>greeting.do <a href="hello/greeting.do">here</a></p>
+    <p>json.do <a href="hello/json.do">here</a></p>
+    <hr>
+    <label>post form表单提交(使用gbk编码表单参数)</label>
+	<form action="hello/postFormGbk.do" method="post" accept-charset="gbk" >
+		<p>
+			客户名称: <input type="text" name="CustomerName" style="width: 300px" />
+		</p>
+		<p>
+			客户电话: <input type="text" name="CustomerTel" style="width: 300px" />
+		</p>
+		<p>
+			<input type="submit" value="提交" />
+		</p>
+	</form>
+	<hr>
+    <hr>
+    <label>post form表单提交(使用utf-8编码表单参数)</label>
+	<form action="hello/postFormUtf8.do" method="post" accept-charset="utf-8" >
+		<p>
+			客户名称: <input type="text" name="CustomerName" style="width: 300px" />
+		</p>
+		<p>
+			客户电话: <input type="text" name="CustomerTel" style="width: 300px" />
+		</p>
+		<p>
+			<input type="submit" value="提交" />
+		</p>
+	</form>
+	<hr>
+    <label>get form表单提交(使用gbk编码表单参数)</label>
+	<form action="hello/getFormGbk.do" method="get" accept-charset="gbk" >
+		<p>
+			客户名称: <input type="text" name="CustomerName" style="width: 300px" />
+		</p>
+		<p>
+			客户电话: <input type="text" name="CustomerTel" style="width: 300px" />
+		</p>
+		<p>
+			<input type="submit" value="提交" />
+		</p>
+	</form>
+	<hr>
+    <label>get form表单提交(使用utf-8编码表单参数)</label>
+	<form action="hello/getFormUtf8.do" method="get" accept-charset="utf-8" >
+		<p>
+			客户名称: <input type="text" name="CustomerName" style="width: 300px" />
+		</p>
+		<p>
+			客户电话: <input type="text" name="CustomerTel" style="width: 300px" />
+		</p>
+		<p>
+			<input type="submit" value="提交" />
+		</p>
+	</form>
+	<hr>
+    
+</body>
+</html>
